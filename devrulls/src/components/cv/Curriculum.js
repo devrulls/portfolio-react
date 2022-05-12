@@ -5,7 +5,7 @@ import "./curriculum.css";
 export const Curriculum = () => {
     return (
         <div className="page">
-            <h1>Curriculum</h1>
+            <h1 className="heading">Curriculum</h1>
             <h2>Work experience</h2>
             <ul>
                 <li>options</li>

@@ -1,0 +1,40 @@
+.home h1{
+    margin-top: 80px;
+    font-family: Georgia, "Times New Roman", Times, Serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.home strong {
+    color: hotpink;
+}
+
+.home h2 {
+    color: var(--color-principal);
+    font-weight: lighter;
+}
+.home .title a {
+    color: hotpink;
+    text-decoration: none;
+    background-color: var(--navBar-hover);
+    padding: 3px;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.home .title a:hover {
+    color: var(--color-principal)
+}
+
+.home .heading{
+    font-size: 40px;
+    font-weight: 500;
+    /*font-style: italic;*/
+    color: black;
+    margin-bottom: 0px;
+}
+
+.home p{
+    color: var(--color-principal);
+}

@@ -22,5 +22,12 @@ code {
     min-height: 400px;
 }
 
-
+.page .heading{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0px;
+    font-size: 55px;
+    font-weight:bold;
+}
 

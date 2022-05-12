@@ -5,7 +5,7 @@ import "./services.css";
 export const Services = () => {
     return (
         <div className="page">
-            <h1>Services</h1>
+            <h1 className="heading">Services</h1>
             <section className="services">
                 <article className="service">
                     <h2>Web design</h2>

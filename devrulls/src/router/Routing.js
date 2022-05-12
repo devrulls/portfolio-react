@@ -8,6 +8,7 @@ import {Contact} from "../components/contact/Contact";
 import {Error} from "../components/error/Error";
 import {HeaderNav} from "../components/layout/HeaderNav";
 import {Footer} from "../components/layout/Footer";
+import {Project} from "../components/portfolio/Project";
 
 
 export const Routing = () => {
@@ -25,6 +26,7 @@ export const Routing = () => {
                     <Route path="/services" element={<Services/>}/>
                     <Route path="/curriculum" element={<Curriculum/>}/>
                     <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/project/:id" element={<Project/>}/>
                     <Route path="*" element={<Error/>}/>
                 </Routes>
             </section>

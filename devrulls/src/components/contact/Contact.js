@@ -6,7 +6,7 @@ import "./contact.css";
 export const Contact = () => {
     return (
         <div className="page">
-            <h1>Get in touch</h1>
+            <h1 className="heading">Get in touch</h1>
             <form className="contact">
                 <input  className='formInput'
                         type="text"
