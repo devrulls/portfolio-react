@@ -1,30 +1,35 @@
 import React from "react";
-import {Routes, Route, NavLink, Navigate} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 import {Home} from "../components/home/Home";
 import {Portfolio} from "../components/portfolio/Portfolio";
 import {Services} from "../components/services/Services";
 import {Curriculum} from "../components/cv/Curriculum";
 import {Contact} from "../components/contact/Contact";
 import {Error} from "../components/error/Error";
-
+import {HeaderNav} from "../components/layout/HeaderNav";
+import {Footer} from "../components/layout/Footer";
 
 
 export const Routing = () => {
-  return(
-      // Header && NavBar
+    return (
+        <>
+            {/*// Header && NavBar*/}
+            <HeaderNav/>
 
-      // Container Principal
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
-        <Route path="/services" element={<Services/>}/>
-        <Route path="/curriculum" element={<Curriculum/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="*" element={<Error/>}/>
-      </Routes>
-
-      //Footer
-
-  )
+            {/*// Container Principal*/}
+            <section className="content">
+                <Routes>
+                    <Route path="/" element={<Navigate to="/home"/>}/>
+                    <Route path="/home" element={<Home/>}/>
+                    <Route path="/portfolio" element={<Portfolio/>}/>
+                    <Route path="/services" element={<Services/>}/>
+                    <Route path="/curriculum" element={<Curriculum/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="*" element={<Error/>}/>
+                </Routes>
+            </section>
+            {/*//Footer*/}
+            <Footer/>
+        </>
+    )
 }

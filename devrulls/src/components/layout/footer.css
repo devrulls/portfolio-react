@@ -1,0 +1,11 @@
+.footer {
+    min-height:150px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 35px;
+    border-top: 3px ridge #BAC964;
+    padding-top: 45px;
+    background: var(--bg-footer);
+    color: var(--color-principal);
+}
