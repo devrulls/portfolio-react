@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "../../global_variables.css";
 import "./project.css";
-import {useNavigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {works} from "../../data/works";
 
 export const Project = () => {
@@ -18,7 +18,7 @@ export const Project = () => {
     return (
         <div className="page page-work">
             <div className="mask">
-                <img src={"/img/" + project.id + ".jpg"}/>
+                <img src={"/img/" + project.id + ".jpg"} alt={Project.id}/>
             </div>
             <h1 className="heading">Project: {project.title}</h1>
             <p>{project.description}</p>
